@@ -5,15 +5,30 @@ html {
 }
 
 body {
-	background-color: rgb(17, 17, 17);
-	font-family: 'Roboto Slab';
-	color: #fff;
+	background-color: rgb(244, 21, 108);
+	color: #878585;
+    font-family: OpenSans-Light,Tahoma,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
 }
+
+.quizTitle {
+    max-width: 120px;
+    position: absolute;
+    display: flex;
+    top: auto;
+	bottom: 0%;
+	margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+
 
 .wrapper {
 	height: 350px;
 	width: 700px;
-	margin: 40px auto;
+	margin: 5% auto;
 }
 
 .quiz-box {
