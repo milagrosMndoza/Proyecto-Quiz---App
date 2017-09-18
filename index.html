@@ -11,57 +11,26 @@
     <title>QUIZ APP</title>
 </head>
 <body>
-    <div class="row">
-            <div clas="col-lg-4 col-lg-offset-4 quizTitle">
-        <img class="fade-out img-responsive" src="assets/img/quiz.gif" width="300">
-            </div>
-    </div>
-  
-         <div class="quiz-box-container row">
-            <div class="wrappe col-lg-4 col-lg-offset-4">
-                <div class="quiz-box col-lg-4 col-lg-offset-4 caja">
-                    <div class="name-box "> <span>Your Name?</span>
-                        <br>
-                        <form id="name-form">
-                            <input type="text" id="name-input-box" />
-                            <br>
-                            <button type="submit" id="name-submit-button">Submit</button>
-                        </form>
-                    </div>
-                    <div id="question-box"> </div>
-                    <div id="result">
-                        <div class="score-label">
-                            <h1><i class="smiley"></i></h1>
-                        </div>
-                        <div>
-                            <div class="score-detail">
-                                <h3></h3>
-                            </div>
-                            <div class="chart">
-                                <div class="percentage" data-percent="100"> <span></span><sup>%</sup> </div>
-                            </div>
-                            <h3 class="message"></h3>
-                        </div>
-                    </div>
-                    <div id="result-stats">
-                        <table>
-                            <tr>
-                                <th>Question</th>
-                                <th>You Selected</th>
-                                <th>Correct Answer</th>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="navigation-buttons">
-                    <button id="prevButton">Previous</button>
-                    <button id="nextButton">Next</button>
-                    <button id="submitButton">Submit</button>
-                    <button id="resultButton">Results</button>
-                </div>
-            </div>
+            <header><img class="fade-out" src="assets/img/quiz.gif"></header>
+    <div id="wrap" class="row">
+      <div class=' col-xs-6 quiz' id="quiz-area">
+        <div class='stem col-xs-12' id="stem"></div>
+        <div class='stem' id="stem"></div>
+        <div class='choice-flexbox col-xs-12'>
+          <div class="options col-xs-4" id="option0"></div>
+          <div class="options col-xs-4" id="option1"></div>
+          <div class="options col-xs-4" id="option2"></div>
+
         </div>
-       
+        <!--progress bar -->
+        <div class="progress">
+          <div><progress id="progress" max="100" value="0"></progress></div>
+          <div>Your progress</div>
+        </div>
+      </div>
+    </div>
+    <!--script tags -->
+  </body>
    
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
