@@ -135,7 +135,7 @@
 			$('.smiley').addClass(icon);
 			$('#question-box').hide();
 			$('#result').show();
-			/*$('.percentage').easyPieChart({
+			/*$('.percentage').easyPieChart({co
 				animate: 1000,
 				lineWidth: 4,
 				onStep: function (value) {
