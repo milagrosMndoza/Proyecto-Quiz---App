@@ -56,7 +56,7 @@ function Question(stem, choices, answer) {
   function showScores() {
 	let scoreString = "<h1>Scores</h1>";
 	scoreString += "<h3>You scored " + quiz.score + " out of " + quiz.questionList.length + "</h3>"
-	scoreString += "<div id='refresh' class='refresh'>Star-Again</div>"
+	scoreString += "<div id='refresh' class='refresh text-center col-xs-4'>Star-Again</div>"
 	let element = document.getElementById('quiz-area');
 	element.innerHTML = scoreString;
   
@@ -85,7 +85,7 @@ function Question(stem, choices, answer) {
   }
   
   function refresh() {
-	let renewHTML = '<div class="quiz col-xs-12  text-center" id="quiz-area">'+
+	let renewHTML = '<div class="quiz col-xs-12 col-xs-offset-4  text-center" id="quiz-area">'+
 	'<div class="stem" id="stem"></div>'+
 	'<div class="choice-flexbox"><div class="options" id="option0"></div>'+
 	'<div class="options" id="option1"></div><div class="options" id="option2"></div>'+

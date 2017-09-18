@@ -9,18 +9,18 @@
   }
   
   .quiz {
-	width: 80%;
+	width: 100%;
 	margin: auto;
 	background-color: white;
 	box-sizing: border-box;
 	box-shadow: 0 0 2px black;
 	display: flex;
 	flex-direction: column;
-	padding: 4em 2em 4em;
+	
   }
   
   .stem {
-	font-size: 1.5vw;
+	font-size: 3.5vw;
 	text-align: center;
 	margin: 0 auto 1.2em;
   }
@@ -33,7 +33,7 @@
   
   .options {
 	width: 60%;
-	font-size: 1.5em;
+	font-size: 2.5em;
 	color: white;
 	background: linear-gradient(to left, rgba(101, 209, 232, 0.56) 25%, rgba(115, 231, 249, 0.43) 40%, rgba(8, 242, 206, 0.72) 70%, rgb(242, 10, 242) 100%);
 	border-color: transparent;
@@ -63,9 +63,9 @@
   .refresh {
 	font-size: 1.5em;
 	color: white;
-	background: linear-gradient(to right, rgba(165, 66, 250, 0.3) 25%, rgba(189, 13, 242, 0.4) 40%, rgba(242, 11, 242, 0.72) 70%, rgb(242, 11, 242) 100%);
+	background: linear-gradient(to right, rgba(250, 15, 113, 0.3) 25%, rgba(189, 13, 242, 0.4) 40%, rgba(242, 11, 242, 0.72) 70%, rgb(242, 11, 242) 100%);
 	border-color: #F404A7;
-	margin: 0.2em;
+	margin: 0 auto;
 	border-radius: 8px;
 	margin-top: 1em;
 	padding: 0.5em;
@@ -99,10 +99,10 @@
 	  padding: 0.5em 1em 0.5em;
 	}
 	.stem {
-	  font-size: 2.5vw;
+	  font-size: 3.5vw;
 	}
 	.options {
-	  font-size: 1.5vw;
+	  font-size: 2.5vw;
 		width: 80%;
 		cursor: pointer;
 	}
@@ -126,7 +126,7 @@
 	
 	/*footer*/
 	#lab_social_icon_footer {
-		padding: 40px 0;
+		padding:  0;
 		background-color: #dedede;
 	}
 	
@@ -172,3 +172,13 @@
 	#progreso{
 		z-index: 9999;
 	}
+	.center-block{	
+		background: 
+		rgb(246, 247, 244);
+	}
+	.container{	
+		background: white;
+		z-index: 1000;
+		
+	}
+	
