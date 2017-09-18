@@ -1,3 +1,5 @@
+'use strict';
+
 // Model
 
 function Question(stem, choices, answer) {
@@ -10,7 +12,7 @@ function Question(stem, choices, answer) {
 	return (choice === this.answer);
   }
   
-  // Controller
+  // Controlador
   
   function Quiz(questionList) {
 	this.score = 0;
@@ -33,17 +35,17 @@ function Question(stem, choices, answer) {
 	this.questionNo++;
   }
   
-  // View
+  // Vistas
   
   function populate() {
 	if (quiz.isEnded()) {
 	  showScores();
 	} else {
-	  var element = document.getElementById('stem');
+	  let element = document.getElementById('stem');
 	  element.innerHTML = quiz.getCurrentQuestion().stem;
   
-	  for (i = 0; i < quiz.getCurrentQuestion().choices.length; i++) {
-		var element = document.getElementById('option' + i);
+	  for (let i = 0; i < quiz.getCurrentQuestion().choices.length; i++) {
+		let element = document.getElementById('option' + i);
 		element.innerHTML = quiz.getCurrentQuestion().choices[i];
 		checkAnswer('option' + i, quiz.getCurrentQuestion().choices[i]);
 		recordProgress();
@@ -52,47 +54,48 @@ function Question(stem, choices, answer) {
   };
   
   function showScores() {
-	var scoreString = "<h1>Scores</h1>";
+	let scoreString = "<h1>Scores</h1>";
 	scoreString += "<h3>You scored " + quiz.score + " out of " + quiz.questionList.length + "</h3>"
-	scoreString += "<div id='refresh' class='refresh'>Re-take Quiz</div>"
-	var element = document.getElementById('quiz-area');
+	scoreString += "<div id='refresh' class='refresh'>Star-Again</div>"
+	let element = document.getElementById('quiz-area');
 	element.innerHTML = scoreString;
   
-	var reTake = document.getElementById('refresh');
+	let reTake = document.getElementById('refresh');
 	reTake.onclick = function() {
 	  refresh()
 	}
   };
   
   function checkAnswer(htmlId, answer) {
-	var element = document.getElementById(htmlId);
+	let element = document.getElementById(htmlId);
 	element.onclick = function() {
 	  quiz.evaluateAnswer(answer);
 	  populate();
 	};
   };
-  
+  //Barra Progree
   function setProgressBar() {
-	var element = document.getElementById('progress');
+	let element = document.getElementById('progress');
 	element.setAttribute('max', quiz.questionList.length);
   };
   
   function recordProgress() {
-	var element = document.getElementById('progress');
+	let element = document.getElementById('progress');
 	element.setAttribute('value', quiz.questionNo);
   }
   
   function refresh() {
-	var renewHTML = '<div class="quiz" id="quiz-area"><div class="stem" id="stem"></div><div class="choice-flexbox"><div class="options" id="option0"></div><div class="options" id="option1"></div><div class="options" id="option2"></div> <div class="progress"><div><progress id="progress" max="100" value="0"></progress></div><div>Your progress</div></div></div>'
-	var element = document.getElementById('wrap');
+	let renewHTML = '<div class="quiz" id="quiz-area"><div class="stem" id="stem"></div><div class="choice-flexbox"><div class="options" id="option0"></div><div class="options" id="option1"></div><div class="options" id="option2"></div> <div class="progress"><div><progress id="progress" max="100" value="0"></progress></div><div>Your progress</div></div></div>'
+	let element = document.getElementById('wrap');
 	element.innerHTML = renewHTML
   
 	quiz.score = 0;
 	quiz.questionNo = 0;
 	populate();
 	setProgressBar();
-  }
-var questions = [
+	}
+	//Array de preguentas con sus respuestas
+let questions = [
   new Question("Javascript is _________ language.", ["Programming", "Application", "Scripting"], "Scripting"),
   new Question("Which HTML attribute is used to define inline styles?", ["font", "class", "style"],"style"),
   new Question("What does CSS stand for?", ["Cascading Style Sheets","Colorful Style Sheets", "Creative Style Sheets"],  "Cascading Style Sheets"),
@@ -100,7 +103,7 @@ var questions = [
   new Question("JavaScript is ______ Side Scripting Language.", ["Server", "None of These","Browser"], "Browser")
 ]
 
-var quiz = new Quiz(questions);
+let quiz = new Quiz(questions);
 
 populate();
 setProgressBar();
