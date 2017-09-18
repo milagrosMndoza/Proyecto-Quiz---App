@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  *, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;}
+
+  body {
+    padding: 50px 0;
+    background-color: #fff3ec;
+    font-family: OpenSans-Light,Tahoma,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333;
+    margin: 0;
+}
+@media (max-width: 320px) {
+    .content { font-size: 2em; }
+ }
+.fade-out {
+    transition: visibility .15s linear,opacity .15s linear;
+    opacity: 1;
+    visibility: visible;
+}
+h1 {
+    font-size: 20px;
+    margin-bottom: 38px;
+    margin-top: 20px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: .67em 0;
+}
+body, h1 {
+    color: #4b4668;
+}
+h1, header {
+    text-align: center;
+}
+header img {
+    max-width: 120px;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    margin: auto;
+    transform: translateX(-50%);
+    border: 0;
+    padding: 20px 20px 90px;
+}
+
+
+.content .progress-container {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+}
+@media (min-width: 720px){
+       .content {padding: 60px 20px 90px;}
+}
+@media (min-width: 720px){
+    .content {padding: 60px 20px 90px;}
+}
+
+
+.content {
+    background-color: #fff;
+    padding: 20px 20px 90px;
+    box-shadow: 4px 6px 38px hsla(0,100%,79%,.3);
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+@media (min-width: 720px){
+    .btn-dark, .btn-huge {
+    margin: 0 30px 30px 0;
+    width: auto;}
+}
+
+.choices {
+    text-align: center;
+}
+
+.btn-dark, .btn-xs {
+    background-color: #edecf0;
+    color: #4b4668;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    border: 1px solid #4b4668;
+    padding: 6px 44px 6px 14px;
+    width: 100%;
+    text-align: left;
+    transition: background-color .3s linear,border-color .3s linear,color .3s linear;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.share-icons {
+    position: absolute;
+    display: -webkit-inline-box;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-30px);
+   opacity: .3;
+}
+div {
+    display: block;
+}
+
+
