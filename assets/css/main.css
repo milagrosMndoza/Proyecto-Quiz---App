@@ -20,7 +20,7 @@
   }
   
   .stem {
-	font-size: 3em;
+	font-size: 1.5vw;
 	text-align: center;
 	margin: 0 auto 1.2em;
   }
@@ -49,7 +49,15 @@
   
   #progress {
 	width: 100%;
-  }
+	}
+	.share-icons {
+		position: absolute;
+		display: inline-block;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-30px);
+    opacity: .3;
+}
   
   .refresh {
 	font-size: 1.5em;
@@ -79,8 +87,8 @@
 	}
 	.progress {
 	  width: 100%;
-	  padding-top: 1em;
-	  margin-top: 1em;
+	  padding-top: 0.5vw;
+	  margin-top: 0.5vw;
 	}
   }
   
@@ -89,11 +97,12 @@
 	  padding: 0.5em 1em 0.5em;
 	}
 	.stem {
-	  font-size: 2em;
+	  font-size: 2.5vw;
 	}
 	.options {
-	  font-size: 1.2em;
-	  width: 80%
+	  font-size: 1.5vw;
+		width: 80%;
+		cursor: pointer;
 	}
 	.progress {
 	  width: 100%;
