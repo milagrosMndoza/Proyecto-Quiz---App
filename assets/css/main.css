@@ -20,7 +20,7 @@
   }
   
   .stem {
-	font-size: 5.1vw;
+	font-size: 3em;
 	text-align: center;
 	margin: 0 auto 1.2em;
   }
@@ -33,7 +33,7 @@
   
   .options {
 	width: 60%;
-	font-size: 3.5vw;
+	font-size: 1.5em;
 	color: white;
 	background-color: lightseagreen;
 	margin: 0.2em;
@@ -89,10 +89,10 @@
 	  padding: 0.5em 1em 0.5em;
 	}
 	.stem {
-	  font-size: 5.5vw;
+	  font-size: 2em;
 	}
 	.options {
-	  font-size: 3.5vw;
+	  font-size: 1.2em;
 	  width: 80%
 	}
 	.progress {
