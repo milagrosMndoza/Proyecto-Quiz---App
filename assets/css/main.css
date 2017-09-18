@@ -4,7 +4,7 @@
   }
   
   body {
-	background-image: linear-gradient(135deg, #EFB3E1 0%, #F6E8F1 100%);
+	background-image: linear-gradient(135deg, #B3E9EF 0%, #0AF4D8 100%);
 	font-family: 'Lato', sans-serif;
   }
   
@@ -35,7 +35,8 @@
 	width: 60%;
 	font-size: 1.5em;
 	color: white;
-	background-color: lightseagreen;
+	background: linear-gradient(to left, rgba(101, 209, 232, 0.56) 25%, rgba(115, 231, 249, 0.43) 40%, rgba(8, 242, 206, 0.72) 70%, rgb(242, 10, 242) 100%);
+	border-color: transparent;
 	margin: 0.2em;
 	border-radius: 8px;
 	padding: 0.5em;
@@ -62,7 +63,8 @@
   .refresh {
 	font-size: 1.5em;
 	color: white;
-	background-color: lightseagreen;
+	background: linear-gradient(to right, rgba(165, 66, 250, 0.3) 25%, rgba(189, 13, 242, 0.4) 40%, rgba(242, 11, 242, 0.72) 70%, rgb(242, 11, 242) 100%);
+	border-color: #F404A7;
 	margin: 0.2em;
 	border-radius: 8px;
 	margin-top: 1em;
@@ -120,4 +122,53 @@
 	.options:focus {
 	  outline: none;
 	}
-  }
+	}
+	
+	/*footer*/
+	#lab_social_icon_footer {
+		padding: 40px 0;
+		background-color: #dedede;
+	}
+	
+	#lab_social_icon_footer a {
+		color: #333;
+	}
+	
+	#lab_social_icon_footer .social:hover {
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-o-transform: scale(1.1);
+	}
+	
+	#lab_social_icon_footer .social {
+		-webkit-transform: scale(0.8);
+		/* Browser Variations: */
+		
+		-moz-transform: scale(0.8);
+		-o-transform: scale(0.8);
+		-webkit-transition-duration: 0.5s;
+		-moz-transition-duration: 0.5s;
+		-o-transition-duration: 0.5s;
+	}
+	/*
+			Multicoloured Hover Variations
+	*/
+	
+	#lab_social_icon_footer #social-fb:hover {
+		color: #3B5998;
+	}
+	
+	#lab_social_icon_footer #social-tw:hover {
+		color: #4099FF;
+	}
+	
+	#lab_social_icon_footer #social-gp:hover {
+		color: #d34836;
+	}
+	
+	#lab_social_icon_footer #social-em:hover {
+		color: #f39c12;
+	}
+	#progreso{
+		z-index: 9999;
+	}

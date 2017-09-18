@@ -85,7 +85,11 @@ function Question(stem, choices, answer) {
   }
   
   function refresh() {
-	let renewHTML = '<div class="quiz col-xs-12 col-xs-offset-12 text-center" id="quiz-area"><div class="stem" id="stem"></div><div class="choice-flexbox"><div class="options" id="option0"></div><div class="options" id="option1"></div><div class="options" id="option2"></div> <div class="progress"><div><progress id="progress" max="100" value="0"></progress></div><div>Your progress</div></div></div>'
+	let renewHTML = '<div class="quiz col-xs-12  text-center" id="quiz-area">'+
+	'<div class="stem" id="stem"></div>'+
+	'<div class="choice-flexbox"><div class="options" id="option0"></div>'+
+	'<div class="options" id="option1"></div><div class="options" id="option2"></div>'+
+	'<div class="progress"><div><progress id="progress" max="100" value="0"></progress></div><div>Your progress</div></div></div>'
 	let element = document.getElementById('wrap');
 	element.innerHTML = renewHTML
   
